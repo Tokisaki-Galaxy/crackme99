@@ -94,13 +94,13 @@ Think you can make it harder? Pull requests with even more C++20 tricks are welc
 
 ## 📂 挑战等级
 
-### 🟢 Alpha: 抽象迷宫 (The Abstraction Maze)
+### 🟢 Alpha: 抽象迷宫
 *   **难度：** ★★★☆☆
 *   **核心技术：** `std::variant`, `std::visit`, C++20 协程。
 *   **描述：** 一个基于 VM 的挑战，其中调度器使用协程实现。线性执行流被粉碎成堆分配的帧，使标准的“单步跳过 (F10)”调试成为噩梦。
 *   **目标：** 逆向自定义字节码并绕过编译时字符串加密。
 
-### 🟡 Beta: 虚假海市蜃楼 (The Deceptive Mirage)
+### 🟡 Beta: 虚假海市蜃楼
 *   **难度：** ★★★★★★☆
 *   **核心技术：** 基于异常的控制流、并行看门狗线程、链式依赖。
 *   **描述：**
@@ -108,7 +108,7 @@ Think you can make it harder? Pull requests with even more C++20 tricks are welc
     *   **逻辑：** 没有 `if-else` 跳转。所有分支都通过 C++ `throw/catch` 机制处理，使标准的静态 CFG（控制流图）分析失效。
 *   **目标：** 获取 4 位字符的密钥。记住：*观察会改变结果。*
 
-### 🔴 Gamma: 混沌熵 (The Chaos Entropy)
+### 🔴 Gamma: 混沌熵
 *   **难度：** ★★★★★★★★★☆
 *   **核心技术：** 混沌引擎（输入种子伪随机数生成器 PRNG）、多态指令解码、安全沙箱。
 *   **描述：**
@@ -123,7 +123,7 @@ Think you can make it harder? Pull requests with even more C++20 tricks are welc
 *   **编译器：** MSVC (Visual Studio 2022 17.4+), GCC 11+, 或 Clang 13+。
 *   **标准：** C++20 或 C++23。
 *   **配置：**
-    *   **优化：** `/O2`（对模板内联至关重要）。
+    *   **优化：** `/O2`（对模板内联非常重要）。
     *   **RTTI：** 禁用 (`/GR-`) 以防止元数据泄露。
     *   **符号：** 剥离（无 PDB）。
 
