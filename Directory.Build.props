@@ -1,0 +1,27 @@
+<Project>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      
+      <RuntimeTypeInfo>false</RuntimeTypeInfo> <!-- 对应 /GR- 禁用 RTTI -->
+      <DebugInformationFormat>None</DebugInformationFormat> <!-- 对应删除 /Zi -->
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <BufferSecurityCheck>true</BufferSecurityCheck> <!-- /GS -->
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    
+    <Linker>
+      <GenerateDebugInformation>false</GenerateDebugInformation> <!-- 对应删除 /DEBUG -->
+      <EnableCOMDATFolding>true</EnableCOMDATFolding> <!-- /OPT:ICF -->
+      <OptimizeReferences>true</OptimizeReferences> <!-- /OPT:REF -->
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration> <!-- /LTCG -->
+      <ProgramDatabaseFile /> 
+    </Linker>
+  </ItemDefinitionGroup>
+</Project>
