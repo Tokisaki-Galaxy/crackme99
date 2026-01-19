@@ -1,10 +1,10 @@
-#pragma once
+ï»¿#pragma once
 #include <string_view>
 #include <string>
 #include <cstdint>
 #include <vector>
 
-// »ìãçÒıÇæ£º±ØĞë±£Ö¤ Keygen ºÍ CrackMe ÍêÈ«Ò»ÖÂ
+// æ··æ²Œå¼•æ“ï¼šå¿…é¡»ä¿è¯ Keygen å’Œ CrackMe å®Œå…¨ä¸€è‡´
 class ChaosEngine {
     uint64_t state;
 public:
