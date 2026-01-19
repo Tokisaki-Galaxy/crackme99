@@ -13,6 +13,7 @@
 #include <exception>
 #include <concepts>
 #include <span>
+#include "key.h"
 
 // ==========================================
 // 1. 编译期混淆
@@ -216,12 +217,6 @@ public:
 };
 
 int main() {
-    // ============ PASTE KEYGEN OUTPUT HERE ============
-    // 示例数据 (必须用 Keygen 生成覆盖这里)
-    std::vector<uint8_t> encrypted_code = { /* ... */ };
-    std::vector<uint8_t> secret_cipher = { /* ... */ };
-    // ==================================================
-
     std::jthread dog(Watchdog::patrol);
 
     std::cout << _S("\n=== GAMMA SECURITY LAYER ===\n");

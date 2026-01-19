@@ -62,7 +62,7 @@ int main() {
     }
 
     // 4. 输出 C++ 代码块
-    std::cout << "\n// ============ COPY BELOW TO CRACKME_GAMMA.CPP ============\n";
+    std::cout << "\n// ============ COPY BELOW TO CRACKME_GAMMA KEY.H ============\n";
 
     // 输出 encrypted_code
     std::cout << "std::vector<uint8_t> encrypted_code = {";
